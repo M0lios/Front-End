@@ -1,0 +1,86 @@
+Cahier des charges : 
+
+- site dans une résolution d'écran de 1366 * 768
+- resepcter les couleurs de l'AFPA
+- écriture Arial ou GOTHAM
+- langue française
+- Logo Afpa en Haut à gauche
+- Une barre de navigation sera présente dans l'entête de chaque page. -> en haut à l'horizontale à droite du logo
+- 5 pages ( Accueil, Formation Développeur Web, Témoignages, Nos Références, Nous contacter)
+
+- Public ciblé : demandeur d'emploi , les salariés qui souhaite changer de métier
+
+Objectif :
+- L'amélioration de la visibilité de l'offre de formation de développeur web
+- La récupération des coordonnées de personnes susceptibles d'intégrer la formation
+
+
+-couleur : 
+78BE20 ( vert afpa) 
+440099 (violet)
+418FDE (blue)
+D22630 (rouge)
+EF4A81 (rose)
+FA4616 (orange)
+008C95 (bleu pastel)
+FFD100 (jaune)
+7A99AC (gris)
+
+## Pour page d'acceuil 
+Accroche en titre principal : « Devenez développeur Web »
+Titre secondaire : « Une formation gratuite et rémunérée pour les demandeurs d'emploi »
+Un bouton CTA (Call To Action) : « Je découvre la formation » . Cliquer sur le bouton charge la page Formation
+Une image de fond de page sera communiquée pour intégration.
+
+
+## Pour page Formation
+
+La page formation
+Contenu à répartir sur 2 colonnes
+
+Admission
+
+Prérequis
+
+Être titulaire du baccalauréat ou équivalent, de préférence scientifique ou technologique.
+
+Pratique courante de l'ordinateur, des smartphones et tablettes tactiles ainsi que de leurs outils.
+
+Pratique de l'anglais à l'oral et à l'écrit (lire, comprendre des textes courts, poser des questions simples sans trop d'hésitation et exprimer ses opinions).
+
+Accès à la formation
+
+Dossier de demande de formation - Tests et Entretien
+
+Le métier
+
+Le développeur web / la développeuse réalise l'ensemble des fonctionnalités techniques d'un site ou d'une application web. Il conçoit des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client.
+
+Qualification
+
+Titre professionnel de niveau 5 (BTS/DUT) de développeur/se Web et Web mobile
+
+Pédagogie
+
+Notre pédagogie privilégie la pratique en limitant les apports théoriques au strict nécessaire.
+
+Nous favorisons l'apprentissage par l'action et proposons des activités proches de situations professionnelles.
+
+Nous créons un environnement propice à l'apprentissage par confrontation entre pairs et privilégions le travail de groupe.
+
+Modalités d'apprentissage
+
+Selon les établissements et la formule retenue :
+
+100 % présentiel en établissement de formation
+
+100 % à distance
+
+Alternance avec des périodes en entreprise et en centre de formation
+
+Durée
+
+8 mois environ (1 190 heures).
+
+
+

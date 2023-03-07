@@ -1,0 +1,33 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image:url(../images/bg.jpg);
+}
+
+h1 {
+   color:green;
+   text-align:center;
+}
+
+.galerie {
+    justify-content:center;
+	display: flex;
+	flex-wrap: wrap;
+	align-content:center;
+}
+
+img {
+	width:200px;
+	height:200px;
+	border:1px solid white;
+	transition: transform 0.2s ease-out;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity:0.3;
+}
+
+img:hover {
+background-color: lime;
+z-index:1;	
+transform: scale(1.2);
+opacity:1;
+}

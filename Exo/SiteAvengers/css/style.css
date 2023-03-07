@@ -1,0 +1,117 @@
+* {	
+    box-sizing: border-box;
+    font-size:16px;
+}
+
+body {
+	width:750px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image:url(../img/fond.png);
+}
+
+/* ################### HEADER ################### */
+header {
+    height:119px;
+}
+
+/* ################### nav ################### */
+nav {
+	position:relative;
+    width: 100%;
+    float:right; /*pour IE*/
+    margin: 0; 
+    display:flex;
+    font-family: "Oswald", sans-serif;
+	text-transform : uppercase;
+	background-color:#ffe099;
+	padding:10px;
+	z-index:1;
+}
+
+/* ################### nav ul ################### */
+nav ul
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding:0;
+}
+ 
+nav ul li a {
+    width:100%;
+    color:orange;
+    text-align:center;
+    font-weight : bold;
+    text-decoration:none;
+    padding:16px;
+}
+
+
+/* ################### MAIN ################### */
+main {
+	background-color:white;
+}
+
+.clear {
+	padding:25px;
+}
+
+/* ################### article ################### */
+article {
+	position:relative;
+	padding:10px;
+	width:100%;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-size:24px;
+	color:darkorange;
+}
+
+.fa-solid {
+	font-size:24px;
+}
+
+h2::before {
+    color:darkorange;
+}
+
+
+
+article img {
+	float: left;
+	width:370px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+
+article a {
+	padding:15px;
+	float: right;
+	background-color:orange;
+    font-weight : bold;
+    text-decoration:none;
+	color:white;
+}
+
+article p {
+	padding-bottom:15px;
+    text-align: justify;
+}
+
+article p, ul {
+	color:grey;
+}
+
+/* ################### footer ################### */
+footer {
+	padding:15px;
+    text-align:center;
+	color:purple;
+}

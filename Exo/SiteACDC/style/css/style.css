@@ -1,0 +1,200 @@
+* { 
+    font-family: "The dark";
+    src: url("../fonts/TheDark.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+	background-color:black;
+	background: url(../img/background.png);
+    background-repeat: repeat;
+    background-size: 50% 100%;
+}
+
+.row {
+	--bs-gutter-x:0 !important;
+}
+
+h3 {
+	text-align:center;
+}
+
+/* ######################## nav ############################# */
+
+.navbar {
+	position:fixed;
+	background-color:#282a2e !important;
+	font-size:25px;
+	top:0;
+	z-index:10;
+}
+
+nav img {
+	position:absolute;
+	height:60px;
+	margin-left:50px;
+}
+
+.image-text-block-1 {
+	position:aboslute !important;
+	margin-left:25px;
+}
+.image-text-block-2 {
+	margin-left:24px;
+}
+
+.navbar-brand {
+	font-size:40px;
+	color:white !important;
+	margin-top:-5px;
+}
+
+.nav-item {
+	padding:10px;
+}
+
+.navbar-nav .nav-link {
+	color:red !important;
+}
+
+.navbar-nav .nav-link:hover {
+	color:white !important;
+}
+
+/* ######################## main ############################# */
+main {
+	margin-top:120px;
+}
+
+/* ######################## section ############################# */
+section .carousel {
+	width:70%;
+	margin:auto;
+}
+
+section .carousel img {
+	width:70% !important;
+	margin:auto;
+	border-radius:20px;
+}
+
+section h3 {
+	margin-top:100px !important;
+	color:white !important;
+}
+
+section h3 img {
+	position:absolute;
+	height:45px;
+	margin-top:-7px;
+	margin-left:40px;
+}
+
+section .img-fluid {
+	border:4px solid white;
+	border-radius:5px;
+	height:259px;
+	width:259px;
+}
+
+h3 .image-text-block-2 {
+	margin-left:15px;
+}
+
+h3 o {
+	margin-left:50px;
+}
+
+.text-personne {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  color:white !important;
+}
+
+.section-discographie {
+	box-shadow: 12px 5px 5px black;
+	margin-bottom:10px;
+}
+
+.card-body h5 {	
+  font-family: Arial, Helvetica, sans-serif !important;
+  color:red;
+  text-align:center;
+  font-weight:bold;
+}
+
+.card-body p {
+  padding:0px 0px 0px 11px;
+}
+
+.card-body .card-text {
+  font-family: "Play", sans-serif !important;
+  color:black;
+  font-weight:500;
+}
+
+.section-discographie img {
+	width:260px !important;
+	height:260px !important;
+	margin:auto;
+}
+
+.section-discographie .btn {
+	background-color:red;
+	color:white;
+	margin-left:10px;
+    font-family: "RocknRoll Typo crazy";
+    src: url("../fonts/rocknroll_typo_crazy.ttf");
+	font-size:22px;
+	font-weight:bold;
+}
+
+
+table {
+	width:90% !important;
+	margin:auto;
+}
+
+th, td {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.table-thread-red {
+	color:red !important;
+}
+
+
+.class-contact {
+	width:60%;
+	margin:auto;
+}
+
+input, textarea {
+	margin-bottom:20px;
+	width:100%;
+	padding:20px;
+	border-radius:8px;
+	font-size:35px;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+input::placeholder, textarea::placeholder {
+    font-family: "HARD ROCK";
+    src: url("../fonts/HARD_ROCK.ttf");
+    color: red;
+}
+
+
+
+form .btn {
+	background-color:red;
+	color:white;
+	margin-left:10px;
+    font-family: "RocknRoll Typo crazy";
+    src: url("../fonts/rocknroll_typo_crazy.ttf");
+	font-size:30px;
+	font-weight:bold;
+	padding:15px;
+}

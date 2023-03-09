@@ -1,0 +1,101 @@
+body {
+	background-color: rgb(0, 0, 0);
+	color: rgb(134, 131, 125);
+}
+
+h1{
+    font-family: "Arial", "Roboto", sans-serif;
+}
+
+/* ####################### nav #######################*/
+.navbar{
+	background-color:#474c59 !important;
+}
+
+.nav-link {
+	color:#9da3b3 !important;
+}
+
+.nav-item .active {
+	color:white !important;
+}
+
+button i b{
+    font-family: "Arial", "Roboto", sans-serif !important;
+}
+
+.after-nav {
+    width:90%;
+	margin:auto;
+}
+
+.border-black{
+	border:1px solid black;
+}
+
+section img {
+	max-height:300px;
+}
+
+/* ####################### CARD #######################*/
+#card-0 {
+	background-color:#e3e3e3;
+}
+
+.list-group .active {
+	background-color:green;
+	color:white;
+	border-color:green;
+}
+
+
+#card-2 .card-header, #card-2 .card-footer {
+	background-color:green;
+	color:white;
+}
+
+.btn-green{	
+	background-color:green;
+	color:white;
+}
+
+/* ####################### TABLE #######################*/
+.table {
+	border:1px solid grey;
+}
+
+th{
+	padding:15px !important;
+	text-align:center;
+	border:1px solid grey;
+	border-bottom:1px solid grey !important;
+}
+
+th:first-child{
+	width:40%;
+}
+
+.table-green {
+	background-color:green;
+	color:white;
+	border:1px solid grey;
+}
+
+tbody tr:nth-child(odd){
+  background-color:#616161;
+}
+
+tbody tr:nth-child(even){
+  background-color:#424242;
+}
+
+td {	
+	border:1px solid grey;	
+	color:white;
+	font-weight:500;
+    text-align: justify;
+}
+
+nav .pagination {
+	/*margin-left:1%;*/
+}

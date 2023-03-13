@@ -11,22 +11,19 @@
     <link href="style/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="style/css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="style/css/style.css" rel="stylesheet" type="text/css" />
-	<script src="style/js/bootstrap.bundle.js"></script>
-	<script src="style/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<title>AC/DC</title>
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-light">
+<header>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-  <div class="container-fluid">  
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="#">Accueil</a>
         </li>
@@ -46,10 +43,9 @@
     </div>	
 	</div>
 </nav>
-
+</header>
 <main>
 <section class="section-carousel">
-
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -76,64 +72,50 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
 </section>
-
-		<section class="text-center" id="membre">
-		
-		<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">		
-		
+<section class="text-center" id="membre">		
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">
 		<h3>
-		<img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
-
-		<o>Les membres du groupe</o>
-		</h3>
-		
+		    <img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
+		    <o>Les membres du groupe</o>
+		</h3>		
 		</div>
+	</div>
+	<br />
+	<div class="row justify-content-evenly">
+		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-xs-B-12">
+			<img class="img-fluid mx-auto" src="style/img/brian-johnson.png" alt="Brian Johnson" />
+			<p class="text-personne">Brian Johnson (Chant)</p>
 		</div>
-		<br />
-		<div class="row justify-content-evenly">
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-xs-B-12">
-			    <img class="img-fluid mx-auto" src="style/img/brian-johnson.png" alt="Brian Johnson" />
-				<p class="text-personne">Brian Johnson (Chant)</p>
-			</div>
+			<img class="img-fluid mx-auto" src="style/img/angus-young.png" alt="Angus Young" />
+			<p class="text-personne">Angus Young (Guitare Solo)</p>
+		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-xs-B-12">
-			    <img class="img-fluid mx-auto" src="style/img/angus-young.png" alt="Angus Young" />
-				<p class="text-personne">Angus Young (Guitare Solo)</p>
-			</div>
+			<img class="img-fluid mx-auto" src="style/img/steve-young.png" alt="Steve Young" />
+			<p class="text-personne">Steve Young (Guitare)</p>
+		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-xs-B-12">
-			    <img class="img-fluid mx-auto" src="style/img/steve-young.png" alt="Steve Young" />
-				<p class="text-personne">Steve Young (Guitare)</p>
-			</div>
+			<img class="img-fluid mx-auto" src="style/img/cliff-williams.png" alt="Cliff Williams" />
+			<p class="text-personne">Cliff Williams (Basse)</p>
+		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-xs-B-12">
-			    <img class="img-fluid mx-auto" src="style/img/cliff-williams.png" alt="Cliff Williams" />
-				<p class="text-personne">Cliff Williams (Basse)</p>
-			</div>
-		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-xs-B-12">
-			    <img class="img-fluid mx-auto" src="style/img/chris-slade.png" alt="Chris Slade" />
-				<p class="text-personne">Chris Slade (Batterie)</p>
-			</div>
-		</div>	
-		
-		</section>
-		
-		
-		
-		<section id="discographie">
-		
-		<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">		
-		
+			<img class="img-fluid mx-auto" src="style/img/chris-slade.png" alt="Chris Slade" />
+			<p class="text-personne">Chris Slade (Batterie)</p>
+		</div>
+	</div>		
+</section>
+<section id="discographie">		
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">
 		<h3>
-		<img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
-
-		<o>La Discographie</o>
-		</h3>
-		
+		    <img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
+		    <o>La Discographie</o>
+		</h3>		
 		</div>
-		</div>
-		<br />
+	</div>
+	<br />
 		<div class="row justify-content-between">
 		    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col-xs-B-12">
               <div class="d-flex justify-content-center">
@@ -269,27 +251,19 @@
  			     </div>
 			    </div>
 			  </div>
-	        </div>
-			
-		</div>	
-		
-		</section>
-		
-		<section id="agenda">
-		
+	        </div>			
+	</div>			
+</section>		
+<section id="agenda">		
 		<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">		
-		
 		<h3 class="text-center">
-		<img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
-
-		<o>Les Dates des Concerts</o>
-		</h3>
-		
-		</div>
-		</div>
-		<br />
-		
+		    <img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
+		    <o>Les Dates des Concerts</o>
+		</h3>		
+	</div>
+</div>
+<br />		
 <div class="table-responsive">	
 <table class="table table-dark table-sm">
   <thead class="table-thread-red">
@@ -340,26 +314,18 @@
   </tbody>
 </table>
 </div>		
-		</section>
-
-
-
-		<section id="contact">
-		
-		<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">		
-		
-		<h3 class="text-center">
-		<img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
-
-		<o>Contact</o>
-		</h3>
-		
-		</div>
-		</div>
-		<br />
-		
-		<form action="contact" method="post">
+</section>
+<section id="contact">		
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">
+		    <h3 class="text-center">
+		    <img src="style/img/eclaire.png"><o class="image-text-block-1">AC</o><o class="image-text-block-2">DC</o>
+		    <o>Contact</o>
+		</h3>		
+	    </div>
+	</div>
+	<br />		
+	<form action="contact" method="post">
 		<div class="class-contact">
 		<div class="row justify-content-between">		
 		    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-xs-B-12">
@@ -379,31 +345,15 @@
                 <textarea type="text" id="message" placeholder="Votre Message" rows="3" required="" /></textarea>			
             </div>
 		</div>
-		</div>
-		
+		</div>		
 		<div class="text-center">
-  			      <a class="btn" type="submit">Envoyer</a>
-  			      <a class="btn">Annuler</a>
+  			<a class="btn" type="submit">Envoyer</a>
+  			<a class="btn">Annuler</a>
 		</div>
-		<br />
-		</form>
-		
-		
-		</section>
-
-
-
-
-
-
+	<br />
+	</form>
+</section>
 </main>
-
-
-
-
-
-
-
+<script src="style/js/bootstrap.js"></script>
 </body>
-
 </html>

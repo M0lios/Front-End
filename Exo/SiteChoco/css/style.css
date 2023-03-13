@@ -32,8 +32,7 @@ nav a
     text-decoration:none;
 }
 nav a:hover
-{
-	
+{	
 	transition: #a79189 0.6s ease;
 	background-color: rgba(255, 255, 255, 0.4);
 }
@@ -65,9 +64,6 @@ section img {
     padding-bottom:20px;	
 }
 
-
-
-
 h2 {
 	width:98%;
 	background-color:#6e2b01;
@@ -81,7 +77,6 @@ h2 {
 	font-size:1.4em;
 	font-family: "PT Sans Narrow";
 }
-
 
 aside{
     width: 35%;
@@ -102,19 +97,17 @@ aside p {
 }
 
 
-
 @media all and (max-width: 1550px)
 {
 	nav {
         width: 100%;
-	    background-color:transparent;
 	}
 	nav a {
         width: 33.33%;
 	    text-align:center;
 	    justify-content: center;
 	}
-	
+
     section {
         width: 100%;
 	}

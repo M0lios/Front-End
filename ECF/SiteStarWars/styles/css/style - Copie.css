@@ -1,0 +1,226 @@
+* {
+}
+
+html {
+    height: 100%;
+}
+
+body {
+	background: url(../../images/background/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+header {
+	/*height:100px;*/
+}
+
+.logo-title {
+	height:90px;
+	z-index:2;
+	margin-top:5px;
+}
+
+#logo-responsive {
+	display:none;
+}
+
+/* ################### nav ################### */
+/*nav {
+	position:relative;
+    width: 100%;
+    float:right;
+    margin: 0; 
+    display:flex;
+    font-family: InspireTWDC, Helvetica, sans-serif;
+	text-transform : uppercase;
+	background:black;
+	padding:10px;
+	border-radius:5px;
+	
+}
+
+nav ul
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding:0;
+}
+ 
+nav ul li a {
+    width:100%;
+    color:white;
+    text-align:center;
+    font-weight : bold;
+    text-decoration:none;
+    padding:16px;
+}*/
+
+
+nav {
+	background-color:black;
+}
+
+nav ul li
+{
+    padding: 0px 4% 0px 4%;
+	font-size:30px;
+	color:white !important;
+	font-family: DINNext, Matterhorn, Helvetica, sans-serif;
+}
+
+.navbar-text-padding {
+	padding:22px;
+	color:grey !important;
+}
+
+.white {
+	color:white !important;
+}
+
+.navbar-new-border {
+	border:0.5px solid grey !important;
+}
+
+.toggler-icon-new-color {
+	color:white !important;
+}
+
+.background-black {
+	background-color:black !important;
+}
+
+.color-white {
+	color:grey !important;
+}
+.color-white:hover {
+	background-color:black !important;
+	color:white !important;
+}
+
+section{	
+	width:90%;
+	margin:auto;
+	border-radius:5px;
+	margin-top:20px;
+	padding:20px;
+	z-index:1;
+}
+
+.section-plus-header {
+	margin-top:20px;
+}
+
+.planete
+{
+	vertical-align:center;
+}
+
+
+.vaisseau
+{
+	vertical-align:center;
+position: absolute;
+transform: rotateY(180deg);
+  width:15%;
+  max-height:25%;
+  animation: Vaisseau 3000ms linear infinite;
+  animation-delay: 300ms;
+  z-index:1;
+}
+
+
+@keyframes Vaisseau {
+  0% {
+  margin-top:0px;
+  }
+  50% {
+	  margin-top:4px;
+	  margin-right:44px;
+  }
+}
+
+
+
+/* ################### CARD ################### */
+
+.card-background-black {
+	background-color:black !important;
+	border:1px solid grey;
+	border-radius:10px !important;
+	color:white !important;
+	margin-bottom:20px;
+}
+
+.card-text {
+  font-family: "Play", sans-serif !important;
+  font-weight:500;
+}
+
+.card-body a {
+    margin-left: auto;
+}
+
+/* ################### button ################### */
+.btn-card {
+	text-transform: uppercase;
+	margin-top:10px;
+	font-size:20px;
+    background-color:black;
+    color:white;
+    border-radius: 50px 50px 50px 50px;
+    border:2px solid #fade4b;
+    text-decoration:none;
+    padding:5px 25px 10px 25px; 
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-card:hover {
+    border:2px solid white;
+    color:white;
+}
+
+#carouselAccueil {
+	margin-top:20px;
+}
+
+
+.carousel-inner img {
+	margin:auto;
+}
+
+
+
+.carousel-round {
+	border-radius:10px;
+}
+
+
+
+
+@media all and (max-width: 900px)
+{
+	#logo{
+		width:80%;
+		height:100%;
+	}
+	#logo-first {
+		display:none;
+	}
+	#logo-responsive {
+		display:block;
+		margin-top:-25;
+		max-width:100%;
+		height:100%;
+	}
+	nav a img {
+	}
+}
+
+

@@ -298,7 +298,22 @@ section{
 
 
 
+/* pour page planete */
+.justify-align {	
+    text-align: justify;
+}
 
+.img-text-planet {
+	width:50%;
+	margin-bottom:20px;
+}
+
+
+footer {
+	margin-top:100px;
+	text-align:center;
+	color:white;
+}
 
 
 
@@ -329,6 +344,9 @@ section{
 	.vaisseau {		
 		width:50%;
 		max-height:50%;
+	}
+	.img-text-planet {
+		width:100%;
 	}
 }
 

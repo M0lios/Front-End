@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
     <link href="styles/css/bootstrap.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="styles/css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="styles/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="styles/css/index.css" rel="stylesheet" type="text/css" />
 	<title>Star Wars Planet</title>
 </head>
 <body>
@@ -72,7 +71,7 @@
 				<div class="card-body">
 					<div class="row">
 						<center>Pour se mettre dans l'ambiance</center>
-						<audio controls preload="auto" loop autoplay>
+						<audio controls loop>
 							<source src="styles/son/starwars.mp3" type="audio/mpeg">
 						</audio>
 					</div> 
@@ -106,7 +105,7 @@
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
 							<div class="d-flex justify-content-center">
-								<img src="images/Accueil/Galaxymap.jpg" class="img-fluid img-thumbnail" rel="Galaxymap.jpg">
+								<img src="images/Accueil/Naboo_Gamaxy_Map.jpg" class="img-fluid img-thumbnail" rel="Naboo_Gamaxy_Map.jpg">
 							</div>
 						</div>
 					</div>
@@ -204,7 +203,6 @@
 				<div class="card-body">
 					<div class="row">
 						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xs-B-12">
-
 							<div id="carouselAccueil" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-indicators">
 									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -275,6 +273,8 @@
 							<br><br>
 							Monter à bord de notre vaisseau et voyagé au sein de notre <i class="class-sith">sith</i> !
 							<br>
+					   	        <a href="#planet" class="btn btn-card">Explorer les planètes</a>
+							<br>
 							<hr>
 							Ci-joint quelques selfies de notre exploration.
 							</p>
@@ -287,8 +287,26 @@
 <section>
 </main>
 <footer>
-    <hr>
-	<p>© 2023 Star Wars Plannet by Damien Cauët For AFPA</p>
+<section class="footer-card">
+    <div class="card card-background-black margin-footer-bottom">
+		<div class="card-body">
+            <H3>Source</h3>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
+					<a href="https://www.google.com/" target="_blank" class="btn btn-card">Google</a>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
+					<a href="https://fr.wikipedia.org/" target="_blank" class="btn btn-card">Wikipedia</a>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
+					<a href="https://starwars.fandom.com/fr/wiki/Accueil" target="_blank" class="btn btn-card">Famdom</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p>© 2023 Star Wars Planet by Damien Cauët For AFPA</p>
+    </div>
+</section>
 </footer>
 <script src="styles/js/bootstrap.js"></script>
 </body>

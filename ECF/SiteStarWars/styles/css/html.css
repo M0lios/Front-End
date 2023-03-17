@@ -1,0 +1,52 @@
+/* ################ VAISSEAU ################ */
+.vaisseau2
+{
+  vertical-align:center;
+  position: absolute;
+  width:40%;
+  animation: Vaisseau 3000ms linear infinite, VaisseauScale 100ms linear;
+  animation-delay: 1300ms, 100ms;
+  animation-duration: 2s, 1s;
+  z-index:1;
+}
+
+@keyframes Vaisseau {
+  0% {
+  margin-top:0px;
+  }
+  50% {
+	  margin-top:4px;
+	  margin-right:44px;
+  }
+}
+
+@keyframes VaisseauScale {
+  0% {
+	  transform: scale(0);
+  }
+  100% {
+	  transform: scale(1);
+  }
+}
+
+/* ################ VAISSEAU + PLANETE STICKY ################ */
+.margin-sticky-img {
+	top:120px;
+}
+
+/* ################ TEXT ################ */
+.img-text-planet-left {
+	float:left;
+	width:50%;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-right:20px;
+}
+
+.img-text-planet-right {
+	float:right;
+	width:50%;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:20px;
+}

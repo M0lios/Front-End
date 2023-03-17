@@ -1,18 +1,17 @@
-* {
-}
-
+/* ################ BODY ################ */
 body {
 	background: url(../../images/background/background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 	background-attachment: fixed;
-	/*padding-top:120px;*/
 }
 
+/* ################ POUR CURSOR SABRE LASER ################ */
 a, li a, p a, div a {
-	cursor: url("../../images/cursor/cursor3.png"), auto;
+	cursor: url("../../images/cursor/cursor.png"), auto;
 }
 
+/* ################ LOGO HEADER ################ */
 .logo-title {
 	height:90px;
 	z-index:2;
@@ -23,6 +22,7 @@ a, li a, p a, div a {
 	display:none;
 }
 
+/* ################ NAV ################ */
 nav {
 	padding:0 !important;
 }
@@ -32,7 +32,43 @@ nav .container-fluid
 	border-bottom:4px solid #ffd700;
 }
 
-.left{
+nav ul li a
+{
+    padding: 30px 25px 30px 25px !important;
+	font-size:30px;
+	color:white !important;
+	font-family: DINNext, Matterhorn, Helvetica, sans-serif;
+}
+
+nav ul li a:hover
+{
+    padding: 30px 24px 30px 24px !important;
+    border-left:1px solid #ffd700;
+    border-right:1px solid #ffd700;
+}
+
+.navbar-text-padding {
+	padding:22px;
+	color:grey !important;
+}
+
+.border-yellow {
+    border-top:2px solid #ffd700;
+    border-bottom:4px solid #ffd700;
+    border-left:1px solid #ffd700;
+    border-right:1px solid #ffd700;
+}
+
+.navbar-new-border {
+	border:0.5px solid grey !important;
+}
+
+.toggler-icon-new-color {
+	color:white !important;
+}
+
+/* ################ POUR LES LASER BAS FOOTER ################ */
+.left {
 	float:left;
 }
 
@@ -52,7 +88,6 @@ nav .container-fluid
   animation: WeaponOne 0.8s 2s linear infinite;
   animation-duration : 5s;
 }
-
 
 .weapon-two {
   opacity: 0;
@@ -92,7 +127,6 @@ nav .container-fluid
   animation-duration : 5s;
 }
 
-
 .weapon-four {
   opacity: 0;
   right: 0px;
@@ -111,62 +145,12 @@ nav .container-fluid
   }
 }
 
-nav ul li a
-{
-    padding: 30px 25px 30px 25px !important;
-	font-size:30px;
-	color:white !important;
-	font-family: DINNext, Matterhorn, Helvetica, sans-serif;
-}
-
-nav ul li a:hover
-{
-    padding: 30px 24px 30px 24px !important;
-    border-left:1px solid #ffd700;
-    border-right:1px solid #ffd700;
-}
-
-.navbar-text-padding {
-	padding:22px;
-	color:grey !important;
-}
-
-.border-yellow {
-    border-top:2px solid #ffd700;
-    border-bottom:4px solid #ffd700;
-    border-left:1px solid #ffd700;
-    border-right:1px solid #ffd700;
-}
-
-
-.white {
-	color:white !important;
-}
-
-.navbar-new-border {
-	border:0.5px solid grey !important;
-}
-
-.toggler-icon-new-color {
-	color:white !important;
-}
-
-.background-black {
-	background-color:black !important;
-}
-
-.color-white {
-	color:grey !important;
-}
-.color-white:hover {
-	background-color:black !important;
-	color:white !important;
-}
-
+/* ################ CORRECTIF POUR LE HEADER FIX ################ */
 .moins-for-nav {
 	margin-top:-20px;
 }
 
+/* ################ SECTION ################ */
 section{	
 	width:90%;
 	margin:auto;
@@ -187,50 +171,7 @@ section{
 	margin-bottom:-110px;
 }
 
-.class-planet {
-	color:#fade4b;
-	font-weight:bold;
-}
-.class-sith {
-	color:#ad0000;
-	font-weight:bold;
-}
-.class-site {
-	color:#008a20;
-	font-weight:bold;
-}
-
-.planete
-{
-	vertical-align:center;
-}
-
-
-.vaisseau
-{
-  vertical-align:center;
-  position: absolute;
-  transform: rotateY(180deg);
-  width:20%;
-  animation: Vaisseau 3000ms linear infinite;
-  animation-delay: 300ms;
-  z-index:1;
-}
-
-
-@keyframes Vaisseau {
-  0% {
-  margin-top:0px;
-  }
-  50% {
-	  margin-top:4px;
-	  margin-right:44px;
-  }
-}
-
-
 /* ################### CARD ################### */
-
 .card-background-black {
 	background-color:black !important;
 	border:1px solid grey;
@@ -269,57 +210,57 @@ section{
     color:white;
 }
 
-
-
-
-
-
-#carouselAccueil {
-	margin-top:20px;
-}
-
-
-.carousel-inner img {
-	margin:auto;
-}
-
-
-
-.carousel-round {
-	border-radius:10px;
-}
-
-
-
-
-.margin-ol {
-	margin-top:20px;
-}
-
-
-
-/* pour page planete */
 .justify-align {	
     text-align: justify;
 }
 
-.img-text-planet {
-	width:50%;
-	margin-bottom:20px;
+/* ################### COULEUR  ################### */
+.white {
+	color:white !important;
 }
 
+.background-black {
+	background-color:black !important;
+}
 
+.color-white {
+	color:grey !important;
+}
+.color-white:hover {
+	background-color:black !important;
+	color:white !important;
+}
+
+.black-bold {
+	font-weight:bold;
+}	
+
+.black-bold:hover {
+	color:#fade4b !important;
+}
+
+.class-planet {
+	color:#fade4b;
+	font-weight:bold;
+}
+
+/* ################ FOOTER ################ */
 footer {
-	margin-top:100px;
 	text-align:center;
 	color:white;
 }
 
+.footer-card {
+	width:100%;
+	margin:auto;
+}
 
+.margin-footer-bottom{
+	margin-bottom:10px;
+}
 
-
-
-@media all and (max-width: 991px)
+/* ################ MEDIA QUERY ################ */
+@media all and (max-width: 1250px)
 {
 	#logo{
 		width:80%;
@@ -341,13 +282,4 @@ footer {
 	li .dropdown-item {
 		text-align:center;
 	}
-	.vaisseau {		
-		width:50%;
-		max-height:50%;
-	}
-	.img-text-planet {
-		width:100%;
-	}
 }
-
-

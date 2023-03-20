@@ -7,11 +7,13 @@
 [![Generic badge](https://img.shields.io/badge/LANGAGE-CSS-blue.svg)]([https://shields.io/](https://developer.mozilla.org/fr/docs/Web/CSS))
 [![Generic badge](https://img.shields.io/badge/LANGAGE-BOOTSTRAP-purple.svg)]([https://shields.io/](https://getbootstrap.com/))
 
-## Version
+## Version du projet
 [![Generic badge](https://img.shields.io/badge/VERSION-1.0.0-red.svg)](https://shields.io/)
 
 ## Crédits
 - [GOOGLE](https://www.google.com/) 
 * [WIKIPEDIA](https://fr.wikipedia.org/) 
 + [FANDOM](https://starwars.fandom.com/fr/wiki/Accueil) 
++ [FLAMINGTEXT](https://flamingtext.fr/Logo/Design-Skywalker)
 
+Enjoy Coding ❤

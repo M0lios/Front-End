@@ -8,7 +8,7 @@
 [![Generic badge](https://img.shields.io/badge/LANGAGE-BOOTSTRAP-orange.svg)](https://shields.io/)
 
 ## Version
-[![Generic badge](https://img.shields.io/badge/version-1.0.0-red.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/VERSION-1.0.0-red.svg)](https://shields.io/)
 
 ## Crédits
 - [GOOGLE](https://www.google.com/) 

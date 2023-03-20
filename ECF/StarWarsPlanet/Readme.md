@@ -5,7 +5,7 @@
 ## Langages utilisé
 [![Generic badge](https://img.shields.io/badge/LANGAGE-HTML%205-orange.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/LANGAGE-CSS-blue.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/LANGAGE-BOOTSTRAP-orange.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/LANGAGE-BOOTSTRAP-purple.svg)](https://shields.io/)
 
 ## Version
 [![Generic badge](https://img.shields.io/badge/VERSION-1.0.0-red.svg)](https://shields.io/)

@@ -11,10 +11,7 @@ https://flamingtext.fr/Logo/Design-Skywalker
 
 GOOGLE - WIKIPEDIA - FANDOM
 
-##############################
-####### FONCTIONNEMENT #######
-##############################
+##################################
+####### les sélecteurs CSS #######
+##################################
 
-Tu es un formateur de compèt', pas besoin de mod'op !
-
-PS : Je me garde le mod'op pour Lundi ! :)

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="styles/css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="styles/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="styles/css/all.css" rel="stylesheet" type="text/css" />
     <link href="styles/css/index.css" rel="stylesheet" type="text/css" />
@@ -60,6 +61,13 @@
   </div>
 </nav>
 </header>
+<a href="#">
+<input type="checkbox" id="btnControl"/>
+<label class="btn" for="btnControl">
+<img src="images/back-to-top/back-to-top.png" rel="back-to-top.png" id="x-wing">
+<img src="images/back-to-top/back-to-top-ok.png" rel="back-to-top.png" id="x-wing-2">
+</label>
+</a>
 <main data-bs-spy="scroll" data-bs-target="#navbar">
 <div class="moins-for-nav"></div>
 <section class="background-black" id="Univers">
@@ -112,7 +120,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 </section>
 <section id="planet">
 	<h1 class="section-title">Les planètes</h1>
@@ -126,7 +134,10 @@
 						<p class="card-text justify-align">
 						Mandalore est une planète de la Bordure Extérieure. Elle était le monde d'origine des Mandaloriens.
 						</p>
-						<a href="html/Mandalore/index.html" class="btn btn-card pull-left">Explorer</a>
+						<a href="html/Mandalore/index.html" class="btn btn-card">
+						<img src="images/svg/planet.svg" rel="planet.svg" class="svg-logo-a">
+						Explorer
+						</a>
 					</div>
 			    </div>
 			</div>
@@ -140,7 +151,10 @@
 						<p class="card-text justify-align">
 						Naboo est une planète située dans la Bordure Médiane, dans le secteur Chommell.
 						</p>
-						<a href="html/Naboo/index.html" class="btn btn-card">Explorer</a>
+						<a href="html/Naboo/index.html" class="btn btn-card">
+						<img src="images/svg/planet.svg" rel="planet.svg" class="svg-logo-a">
+						Explorer
+						</a>
 					</div>
 			    </div>
 			</div>
@@ -154,7 +168,10 @@
 						<p class="card-text justify-align">
 						Tatooine est un monde désertique situé dans le secteur Arkanis de la Territoires de la Bordure Extérieure.
 						</p>
-						<a href="html/Tatooine/index.html" class="btn btn-card">Explorer</a>
+						<a href="html/Tatooine/index.html" class="btn btn-card">
+						<img src="images/svg/planet.svg" rel="planet.svg" class="svg-logo-a">
+						Explorer
+						</a>
 					</div>
 			    </div>
 			</div>
@@ -269,11 +286,14 @@
 								</li>
 							</ol>
 							<br>
-							A ou B ... Telle est la voie !
+							A ou B ... <q>Telle est la voie !</q>
 							<br><br>
-							Monter à bord de notre vaisseau et voyagé au sein de notre <i class="class-sith">sith</i> !
+							Monter à bord de notre vaisseau <a>(X-wing)</a> et voyagé au sein de notre <i class="class-sith">sith</i> !
 							<br>
-					   	        <a href="#planet" class="btn btn-card">Explorer les planètes</a>
+					   	        <a href="#planet" class="btn btn-card">
+						        <img src="images/svg/planet.svg" rel="planet.svg" class="svg-logo-a">
+								Explorer les planètes
+								</a>
 							<br>
 							<hr>
 							Ci-joint quelques selfies de notre exploration.
@@ -293,13 +313,22 @@
             <H3>Source</h3>
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
-					<a href="https://www.google.com/" target="_blank" class="btn btn-card">Google</a>
+					<a href="https://www.google.com/" target="_blank" class="btn btn-card">
+						<img src="images/svg/link.svg" rel="planet.svg" class="svg-logo-a">
+						Google
+					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
-					<a href="https://fr.wikipedia.org/" target="_blank" class="btn btn-card">Wikipedia</a>
+					<a href="https://fr.wikipedia.org/" target="_blank" class="btn btn-card">
+						<img src="images/svg/link.svg" rel="planet.svg" class="svg-logo-a">
+						Wikipedia
+					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">
-					<a href="https://starwars.fandom.com/fr/wiki/Accueil" target="_blank" class="btn btn-card">Famdom</a>
+					<a href="https://starwars.fandom.com/fr/wiki/Accueil" target="_blank" class="btn btn-card">
+						<img src="images/svg/link.svg" rel="planet.svg" class="svg-logo-a">
+						Famdom
+					</a>
 				</div>
 			</div>
 		</div>

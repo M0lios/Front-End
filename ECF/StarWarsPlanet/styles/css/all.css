@@ -201,7 +201,7 @@ section{
     border-radius: 50px 50px 50px 50px;
     border:2px solid #fade4b;
     text-decoration:none;
-    padding:5px 25px 10px 25px; 
+    padding:6px 25px 8px 25px; 
     outline: none;
     cursor: pointer;
 }
@@ -259,6 +259,46 @@ footer {
 .margin-footer-bottom{
 	margin-bottom:10px;
 }
+
+/* ################ LOGO SVG FONTAWESOME ################ */
+.svg-logo-a {
+	padding-right:10px;
+}
+
+/* ################ BACK-TO-TOP ################ */
+#x-wing, #x-wing-2 {
+  position: fixed;
+  bottom: 50px;
+  right:0;
+  z-index: 999;
+  padding: 0px;
+  width:100px;
+  height:100px;
+  transform: rotate(-90deg);
+}
+
+#btnControl {
+    display: block;
+}
+
+#x-wing-2 {
+	opacity:0;
+}
+
+#btnControl:focus + label > img, #btnControl:focus + label > img #x-wing-2 {
+    animation: TurboPower 100ms linear;
+    animation-duration : 0.8s;
+}
+
+@keyframes TurboPower {
+  50% {
+	  opacity:1;
+      width:200px;
+      height:200px;
+  }
+}
+
+
 
 /* ################ MEDIA QUERY ################ */
 @media all and (max-width: 1250px)

@@ -1,3 +1,6 @@
+## Authors
+[@M0lios](https://www.github.com/M0lios)
+
 # Titre du projet
 **Star Wars Planet**
 # Description du projet

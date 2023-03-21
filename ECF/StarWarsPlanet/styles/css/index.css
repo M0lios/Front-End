@@ -14,7 +14,7 @@
   vertical-align:center;
   position: absolute;
   transform: rotateY(180deg);
-  width:20%;
+  max-width:20%;
   animation: Vaisseau 3000ms linear infinite;
   animation-delay: 300ms;
   z-index:1;

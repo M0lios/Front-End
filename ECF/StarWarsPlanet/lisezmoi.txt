@@ -1,4 +1,9 @@
 ##############################
+######## Damien Cauët ########
+##############################
+
+
+##############################
 ############ LOGO ############
 ##############################
 
@@ -11,7 +16,210 @@ https://flamingtext.fr/Logo/Design-Skywalker
 
 GOOGLE - WIKIPEDIA - FANDOM
 
-##################################
-####### les sélecteurs CSS #######
-##################################
+##############################
+##### les sélecteurs CSS #####
+##############################
 
+
+------------------------------------------------------------------------------------------- Header
+
+
+-> header -> nav (bootstrap) 
+   -> logo : le logo change en fonction de la taille de l'écran
+   -> Accueil : Permet de revenir sur la page d'accueil + en top de la page
+   // sur page index.html
+   -> Univers : nous dirige automatiquement sur la div id="Univers", le block Univers raconte l'histoire de l'Univers Star Wars
+   // Sur toutes les pages
+   -> Les planètes, menu déroulant qui nous montre les 3 planètes à visiter
+      Sur la page d'accueil cela nous dirige automatiquement sur la div de la planète correspondante.
+	  Sur les autres pages html cela nous redirige sur la page de la planète correspondante
+   // Sur le page index.html
+   -> Nous : nous dirige automatiquement sur la div id="Nous", le block Nous raconte l'histoire fun de la création du site
+   // Sur les pages html (planète)
+   -> Histoire : nous dirige automatiquement sur la div id="Histoire", le block Histoire raconte l'histoire de la planète
+   -> Caractéristiques : nous dirige automatiquement sur la div id="Caracteristique", le block Caracteristique détaille les Caractéristiques de la planète via un tableau responsive
+   
+   
+-> En bas du nav nous avons deux blocks avec les class : left & right
+   cela à pour but de placer les "laser vert et rouge"
+   vert : à gauche (left)
+   rouge : à droite (right)   
+
+
+------------------------------------------------------------------------------------------- Autre  
+
+
+-> Création d'un top to back sous forme de photo / Animation -> Vaisseau X-wing possitionné en bas à droite de l'écran
+   il a pour mission de vous ramener en haut de la page.
+   Quand nous cliquons dessus, nous simulons le "ciblage" d'un checkbox (caché par l'opacité 0) via le css ":focus", cela permet de réaliser l'animation et de faire apparaitre le div qui à pour id "x-wing-2" d'opacity 0 au départ à opacity 1.
+   Via l'animation il est visible quand on atteind 50% de l'animation avec un zoom fois 2 et disparait par la suite pour laisser place à l'image standard.
+   
+
+------------------------------------------------------------------------------------------- Univers -> index.html
+
+
+-> Création d'un "card" sous forme de deux colonnes responsive, 
+En top de la card, nous avons placé un <audio> -> Musique Star Wars
+à gauche du card, l'histoire de Star Wars, à droite une image de la galaxie de Star Wars  
+
+
+------------------------------------------------------------------------------------------- Les planètes -> index.html
+
+
+-> 3 card pour distinguer les 3 planètes
+   - image par la balise <img>
+   - titre
+   - text <p>
+   - lien (redirection sur la pages html de la planète) par la balise <a>
+
+Les cards sont centré par la class="d-flex justify-content-center"
+
+
+------------------------------------------------------------------------------------------- Nous -> index.html
+
+
+-> Création d'un "card" sous forme de deux colonnes responsive, 
+à gauche du card, l'histoire de pourquoi nous avons rélisé le site, à droite une deux images supperposé, avec une animation "gauche/droite" du vaisseau X-wing
+
+
+-> Création d'un second "card" sous forme de deux colonnes responsive, 
+à gauche du card, un carousel, à droite un petit text fun pour utiliser les balises <ol>
+
+
+------------------------------------------------------------------------------------------- Histoire -> html/planete/index.html
+
+
+-> Création d'un "card" sous forme de deux colonnes responsive, 
+à gauche du card, deux images supperposé, avec une animation "gauche/droite" du vaisseau X-wing, nous avons placé l'ensemble sous une div sticky pour que les images suivent le scroll de la page
+à droite, l'histoire de la planète commenté avec des images qui ont pour propriété "img-text-planet-left" ou "img-text-planet-right" pour les placer soit à gauche, soit à droite de la colonne.
+
+
+------------------------------------------------------------------------------------------- Caractéristiques -> html/planete/index.html
+
+
+-> Création d'un "card", 
+   Simple tableau responsive (class="table-responsive") qui détaille les Caractéristiques de la planète
+   Ajout de la class table-hover pour que quand on survole une ligne, celle-ci change de couleur
+
+
+------------------------------------------------------------------------------------------- Footer
+
+
+-> Création d'un "card" responsive, 
+   - 3 colonnes pour les 3 liens ( source) <a> mais avec la propriété target="_blank" pour ouvrir le lien dans un nouvel onglet et ne pas perdre la page en cours.
+   J'ai inclu dans les liens une image svg (téléchargé via fontawesome), pour ne pas perdre le visuel de l'image si vous n'avez pas internet.
+   - en bas du card, mis en place du copyright.
+   
+
+##############################
+######### MediaQuery #########
+##############################
+
+Sur all.css : 
+@media all and (max-width: 1250px) // Quand on est en dessous de 1250px
+{
+    //ajustement automatique de la grandeur du logo titre 
+	#logo{
+		width:80%;
+		height:100%;
+	}
+	// Je masque ici le premier logo titre
+	#logo-first {
+		display:none;
+	}
+	// Je rend visible ici le second logo titre
+	#logo-responsive {
+		display:block;
+		margin-top:-25;
+		max-width:100%;
+		height:100%;
+	}
+	// Changement de la taille de police dans la nav
+	nav ul li a
+	{
+		font-size:18px;
+	}
+	li .dropdown-item {
+		text-align:center;
+	}
+}
+
+Sur index.css : 
+//Réduction des dimension du vaisseau à 50% de la grandeur de son parent pour éviter tout bug de grandeur quand on est sur smartphone quand on est en dessous de 1250px.
+@media all and (max-width: 1250px)
+{
+	.vaisseau {		
+		width:50%;
+		max-height:50%;
+	}
+}
+
+
+##############################
+######### Animation ##########
+##############################
+
+Sur html.css et index.css
+
+/* ################ VAISSEAU ################ */
+.vaisseau2
+{
+  vertical-align:center;
+  position: absolute;
+  width:40%;
+  //On lance ici deux animations, une en boucle infini, et la deuxième qu'une seul fois.
+  animation: Vaisseau 3000ms linear infinite, VaisseauScale 100ms linear;
+  animation-delay: 1300ms, 100ms;
+  animation-duration: 2s, 1s;
+  z-index:1;
+}
+
+// la boucle infini pour réaliser un mouvement de gauche à droite
+@keyframes Vaisseau {
+  0% {
+  margin-top:0px;
+  }
+  50% {
+	  margin-top:4px;
+	  margin-right:44px;
+  }
+}
+
+// réaliser une animation d'apparition du vaiseau
+@keyframes VaisseauScale {
+  0% {
+	  transform: scale(0);
+  }
+  100% {
+	  transform: scale(1);
+  }
+}
+
+// au click de top to back (revenir en haut de la page avec le vaisseau positionné en bas à droite)
+Création d'une animation de zoom + affichage des turbos de la mort !
+
+#btnControl:focus + label > img, #btnControl:focus + label > img #x-wing-2 {
+    animation: TurboPower 100ms linear;
+    animation-duration : 0.8s;
+}
+
+@keyframes TurboPower {
+  50% {
+	  opacity:1;
+      width:200px;
+      height:200px;
+  }
+}
+
+Sur all.css
+
+//on fait apparaitre les lasers en bas de la nav
+@keyframes WeaponOne {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
+    opacity: 0.5;
+  }
+}

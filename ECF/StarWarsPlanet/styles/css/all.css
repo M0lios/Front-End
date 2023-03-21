@@ -278,6 +278,7 @@ footer {
 }
 
 #btnControl {
+	opacity:0;
     display: block;
 }
 
@@ -297,8 +298,6 @@ footer {
       height:200px;
   }
 }
-
-
 
 /* ################ MEDIA QUERY ################ */
 @media all and (max-width: 1250px)

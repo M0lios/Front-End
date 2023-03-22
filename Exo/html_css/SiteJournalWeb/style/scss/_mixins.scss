@@ -1,0 +1,9 @@
+@mixin invert-color-grey {
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+}
+
+@mixin border-round-padding {
+  border-radius:10px;
+  padding:15px;
+}

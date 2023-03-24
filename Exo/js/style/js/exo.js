@@ -292,7 +292,7 @@ while (nombre != 0){
 let X = prompt("Saisissez un nombre X");
 
 var i = 1;
-console.log("Table de multiplication par 5");
+console.log("Table de multiplication par "+X);
 console.log("=============================");
 while (i<=N){
  resultat = X*i;
@@ -536,44 +536,63 @@ for(var i = 0; i < NbColonne; i++){
 }*/
 
 //EXO 2 P9
+/*function GetInterger(entier){
+	if(isNaN(entier) == true){
+	    console.log("vous n'avez pas rentré une valeur numérique (chiffre)");
+	}
+	else{
+	    console.log("Chiffre ok");
+	}
+}
 
 
+var nbPoste = prompt("Saissisez le nombre de poste que vous voulez dans le tableau");
+
+GetInterger(nbPoste);
+// Saissi tab -> Init Tab
+var tab = [];
+for (var i = 0; i < nbPoste; i++){	
+	tab[i] = prompt("Nom d u poste N° "+(i+1));
+}
+
+//Afficher le menu
+function AfficheTab(tab){
+  for (var i = 0; i < nbPoste; i++){
+	console.log(tab[i]+" ["+i+"]");
+  }	
+}
 
 
+AfficheTab(tab);
+
+//RechercheTabParIndex
+function RechercheTab(Recherche){
+  console.log("Nom du poste recherché : "+tab[Recherche]);
+}
+
+var Recherche = prompt("Saissisez l'index du poste recherché");
+GetInterger(Recherche);
+RechercheTab(Recherche);
 
 
+//Max et Moy
+function InfoTab(tab){
+	
+  var count = 0;
+  var max = 0;
 
+  for (var i = 0; i < nbPoste; i++){
+	count += tab[i].length;
+	if(tab[i].length > max){
+		max = tab[i].length;
+	}
+  }
+  
+  console.log("Max (longueur text) du tableau (poste) : "+max);
+  console.log("Moyenne (longueur total text) du tableau (des postes) : "+(count/tab.length));
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+InfoTab(tab);*/
 
 
 //EXO 3 P9
@@ -645,12 +664,8 @@ while(j != n){
 }*/
 
 //EXO 6 P9
-
-
-var Horaires = ["03:15:55", "02:15:55"];
-
+/*var Horaires = ["03:15:55", "02:15:55"];
 var cumulesecondes = 0;
-
 for(var i = 0; i < Horaires.length; i++)
 {
     var separation = Horaires[i].split(':');
@@ -658,17 +673,11 @@ for(var i = 0; i < Horaires.length; i++)
     for(var j = 0; j < separation.length; j++)
     {
         if(j == 0)
-		{
 			cumulesecondes += (separation[j]*3600);
-		}
         if(j == 1)
-		{
 			cumulesecondes += (separation[j]*60);
-		}
         if(j == 2)
-		{
 			cumulesecondes += (separation[j]*1);
-		}
     }
 }
 console.log(cumulesecondes);
@@ -689,33 +698,40 @@ function conversion_seconde_heure(time) {
 	var nbSeconds=reste;
  
 	if (nbJours>0)
-	    result=result+nbJours+'j ';
+	    result=result+nbJours+'D ';
 
 	if (nbHours>0)
-	    result=result+nbHours+'h ';
+	    result=result+nbHours+': ';
  
 	if (nbMinutes>0)
-	    result=result+nbMinutes+'min ';
+	    result=result+nbMinutes+': ';
  
 	if (nbSeconds>0)
-	    result=result+nbSeconds+'s ';
+	    result=result+nbSeconds;
  
 	return result;
 }
-
-console.log(conversion_seconde_heure(cumulesecondes));
-
+console.log(conversion_seconde_heure(cumulesecondes));*/
 
 
+// EXO 7 P9
 
+/*var nbr = prompt("Saisissez un nombre");
 
+console.log(nbrPremier(nbr));
 
-
-
-
-
-
-
-
-
-
+function nbrPremier(nbr)
+{
+	for(var i = 2; i <= nbr; i++){
+	    var count = 0;
+	    for (var j = 1; j <= (Math.sqrt(i)); j++){
+            if (i % j == 0)
+		    {
+			    count += 1;
+			}			
+		}
+		if (count == 1){
+			console.log(i);
+		}
+	}
+}*/

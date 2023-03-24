@@ -715,13 +715,17 @@ console.log(conversion_seconde_heure(cumulesecondes));*/
 
 
 // EXO 7 P9
-
-/*var nbr = prompt("Saisissez un nombre");
-
+/*
+var nbr = prompt("Saisissez un nombre");
+var tab = [];
 console.log(nbrPremier(nbr));
 
 function nbrPremier(nbr)
 {
+	for(var t = 0; t <= nbr; t++){
+		tab[t] = 0;
+	}	
+	
 	for(var i = 2; i <= nbr; i++){
 	    var count = 0;
 	    for (var j = 1; j <= (Math.sqrt(i)); j++){
@@ -731,7 +735,10 @@ function nbrPremier(nbr)
 			}			
 		}
 		if (count == 1){
-			console.log(i);
+			console.log(i);			
+		    tab[i] = 1;
 		}
 	}
-}*/
+}
+console.log(tab);
+*/

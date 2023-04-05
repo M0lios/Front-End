@@ -1,0 +1,42 @@
+{
+	"Name": "La Tour de Pizz",
+	"Slogan": "Vive la pizza penché !",
+	"Pizzas": [
+		{
+			"PizzaName": "Margherita",
+			"PizzaImg": "https://resizer.glanacion.com/resizer/38NDGy0wnPmxYOpTGRKk2NFRdo0=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/M7NX62ONAJGRHMGZQKL3UMOIG4.jpeg",
+			"Ingredients": [
+				"Sauce tomate",
+				"Mozzarella",
+				"Origan"
+			],
+			"Prix": "19.00"
+		},
+		{
+			"PizzaName": "Américaine",
+			"PizzaImg": "https://resizer.glanacion.com/resizer/38NDGy0wnPmxYOpTGRKk2NFRdo0=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/M7NX62ONAJGRHMGZQKL3UMOIG4.jpeg",
+			"Ingredients": [
+				"Sauce tomate",
+				"Mozzarella",
+				"Viande hachée",
+				"Champignons",
+				"Potatoes",
+				"Origan"
+			],
+			"Prix": "20.00"
+		},
+		{
+			"PizzaName": "4 Fromages",
+			"PizzaImg": "https://resizer.glanacion.com/resizer/38NDGy0wnPmxYOpTGRKk2NFRdo0=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/M7NX62ONAJGRHMGZQKL3UMOIG4.jpeg",
+			"Ingredients": [
+				"Sauce tomate",
+				"Mozzarella",
+				"Bleu",
+				"Chèvre",
+				"Emmental",
+				"Origan"
+			],
+			"Prix": "21.00"
+		}
+	]
+}

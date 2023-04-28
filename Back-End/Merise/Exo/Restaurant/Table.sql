@@ -1,0 +1,132 @@
+/*Table structure for table `Restaurant` */
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`Restaurant_Damien` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `Restaurant_Damien`;
+
+DROP TABLE IF EXISTS `Fournisseurs`;
+CREATE TABLE `Fournisseurs`(
+   `Id_Fournisseur` INT NOT NULL AUTO_INCREMENT,
+   `Nom` VARCHAR(100) DEFAULT NULL,
+   `Adresse_Postal` VARCHAR(50) DEFAULT NULL,
+   `Adresse_Ville` VARCHAR(100) DEFAULT NULL,
+   `Adresse_Rue` VARCHAR(200) DEFAULT NULL,
+   PRIMARY KEY(`Id_Fournisseur`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Employees`;
+CREATE TABLE `Employees`(
+   `Id_Employee` INT NOT NULL AUTO_INCREMENT,
+   `Nom` VARCHAR(100) DEFAULT NULL,
+   `Prenom` VARCHAR(100) DEFAULT NULL,
+   `Adresse_Postal` VARCHAR(50) DEFAULT NULL,
+   `Adresse_Ville` VARCHAR(100) DEFAULT NULL,
+   `Adresse_Rue` VARCHAR(200) DEFAULT NULL,
+   `Tel` VARCHAR(300) DEFAULT NULL,
+   PRIMARY KEY(`Id_Employee`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Diplomes`;
+CREATE TABLE `Diplomes`(
+   `Id_Diplome` INT NOT NULL AUTO_INCREMENT,
+   `Designation` VARCHAR(100) DEFAULT NULL,
+   PRIMARY KEY(`Id_Diplome`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Select_Type`;
+CREATE TABLE `Select_Type`(
+   `Id_Type` INT NOT NULL AUTO_INCREMENT,
+   `Type_Name` VARCHAR(100) DEFAULT NULL,
+   PRIMARY KEY(`Id_Type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Plats`;
+CREATE TABLE `Plats`(
+   `Id_Plat` INT NOT NULL AUTO_INCREMENT,
+   `Designation` VARCHAR(100) DEFAULT NULL,
+   `Prix_Unitaire` DECIMAL(15,2) NOT NULL DEFAULT '0.00',
+   `Id_Type` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Plat`),   
+   FOREIGN KEY(`Id_Type`) REFERENCES `Select_Type`(`Id_Type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Menus`;
+CREATE TABLE `Menus`(
+   `Id_Menu` INT NOT NULL AUTO_INCREMENT,
+   `Designation` VARCHAR(100) DEFAULT NULL,
+   `Prix_Unitaire` DECIMAL(15,2) NOT NULL DEFAULT '0.00',
+   PRIMARY KEY(`Id_Menu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Boissons`;
+CREATE TABLE `Boissons`(
+   `Id_Boisson` INT NOT NULL AUTO_INCREMENT,
+   `Designation` VARCHAR(100) DEFAULT NULL,
+   `Millesime` INT NOT NULL DEFAULT '0000',
+   `Prix_Unitaire_Achat` DECIMAL(15,2) NOT NULL DEFAULT '0.00',
+   `Prix_Unitaire` DECIMAL(15,2) NOT NULL DEFAULT '0.00',
+   `Id_Type` INT NOT NULL DEFAULT '0',
+   `Id_Fournisseur` INT DEFAULT NULL,
+   PRIMARY KEY(`Id_Boisson`),
+   FOREIGN KEY(`Id_Type`) REFERENCES `Select_Type`(`Id_Type`),
+   FOREIGN KEY(`Id_Fournisseur`) REFERENCES `Fournisseurs`(`Id_Fournisseur`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `Commandes`;
+CREATE TABLE `Commandes`(
+   `Id_Commande` INT NOT NULL AUTO_INCREMENT,
+   `Date_Commande` DATETIME NOT NULL,
+   `Num_Table` INT NOT NULL DEFAULT '0',
+   `Service_Rythme`enum('MIDI','SOIR','JOURNEE') NOT NULL DEFAULT 'JOURNEE',
+   `Id_Employee` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Commande`),
+   FOREIGN KEY(`Id_Employee`) REFERENCES `Employees`(`Id_Employee`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `POSSEDE_DIPLOME`;
+CREATE TABLE `POSSEDE_DIPLOME`(
+   `Id_Employee` INT NOT NULL DEFAULT '0',
+   `Id_Diplome` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Employee`, `Id_Diplome`),
+   FOREIGN KEY(`Id_Employee`) REFERENCES `Employees`(`Id_Employee`),
+   FOREIGN KEY(`Id_Diplome`) REFERENCES `Diplomes`(`Id_Diplome`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `CONTENIR_MENU`;
+CREATE TABLE `CONTENIR_MENU`(
+   `Id_Commande` INT NOT NULL DEFAULT '0',
+   `Id_Menu` INT NOT NULL DEFAULT '0',
+   `Qty` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Commande`, `Id_Menu`),
+   FOREIGN KEY(`Id_Commande`) REFERENCES `Commandes`(`Id_Commande`),
+   FOREIGN KEY(`Id_Menu`) REFERENCES `Menus`(`Id_Menu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `MENU_PLAT`;
+CREATE TABLE `MENU_PLAT`(
+   `Id_Plat` INT NOT NULL DEFAULT '0',
+   `Id_Menu` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Plat`, `Id_Menu`),
+   FOREIGN KEY(`Id_Plat`) REFERENCES `Plats`(`Id_Plat`),
+   FOREIGN KEY(`Id_Menu`) REFERENCES `Menus`(`Id_Menu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `CONTENIR_PLAT`;
+CREATE TABLE `CONTENIR_PLAT`(
+   `Id_Commande` INT NOT NULL DEFAULT '0',
+   `Id_Plat` INT NOT NULL DEFAULT '0',
+   `Qty` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Commande`, `Id_Plat`),
+   FOREIGN KEY(`Id_Commande`) REFERENCES `Commandes`(`Id_Commande`),
+   FOREIGN KEY(`Id_Plat`) REFERENCES `Plats`(`Id_Plat`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `CONTENIR_BOISSON`;
+CREATE TABLE `CONTENIR_BOISSON`(
+   `Id_Boisson` INT NOT NULL DEFAULT '0',
+   `Id_Commande` INT NOT NULL DEFAULT '0',
+   `Qty` INT NOT NULL DEFAULT '0',
+   PRIMARY KEY(`Id_Boisson`, `Id_Commande`),
+   FOREIGN KEY(`Id_Boisson`) REFERENCES `Boissons`(`Id_Boisson`),
+   FOREIGN KEY(`Id_Commande`) REFERENCES `Commandes`(`Id_Commande`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

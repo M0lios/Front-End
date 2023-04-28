@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="images/favicon/favicon.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+    <title>COMIC</title>
+</head>
+
+<header>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark background-black" id="navbar">
+  <div class="container-fluid">
+    <div id="logo">
+      <a class="navbar-brand" href="#"><img id="logo-first" src="images/favicon/favicon.png" rel="Comic logo" class="logo-title"></a>
+	</div>
+    <button class="navbar-toggler white navbar-new-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon toggler-icon-new-color"></span>
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link color-white" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link color-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+		  Rechercher une BD
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="grey" width="30" height="25"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+		  </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link color-white" type="button">
+		  Mon panier 
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="grey" width="30" height="25"><path d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+			<span class="position-absolute badge rounded-pill bg-danger span-position-panier" id="bn_item_basket" value="0">0</span>
+		  </button>
+        </li>
+      </ul>
+      <ul class="d-flex">
+        <a class="btn btn-outline-danger connexion-sizing" href="#">Connexion</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Rechercher une BD</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row">
+		<div class="mb-3">
+			<select class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12" name="serie_search" id="serie_search">
+				<option value="reset">-- Sélectionner une série --</option>
+			</select>
+		</div>
+		<div class="mb-3">
+			<select class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12" name="titre_search" id="titre_search">
+				<option value="reset">-- Sélectionner un titre --</option>
+			</select>
+		</div>
+		<div class="mb-3">
+			<select class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12" name="auteur_search" id="auteur_search">
+				<option value="reset">-- Sélectionner un auteur --</option>
+			</select>
+		</div>
+		
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">		
+			<button class="btn btn btn-outline-danger verticlal-center" id="reset_filtre">Reset</button>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-B-12">		
+			<button class="btn btn btn-outline-success verticlal-center" id="Search" data-bs-dismiss="offcanvas" aria-label="Close">Rechercher</button>
+		</div>
+	</div>
+  </div>
+</div>
+
+<div class="listing-bd">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12" id="recherche">
+        <h1>Liste des BD</h1>
+			<div class="row" id="loader_bd">
+				<img src="images/loader.gif" height="300px">
+			</div>		
+			<div class="row" id="load_bd">
+			</div>
+		</div>
+	</div>
+</div>
+	
+<div class="modal fade" id="ModalBD" tabindex="-1" aria-labelledby="titleBD" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-xxl-down">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Toutes les informations</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+	  
+
+			<div id="titleBD"></div>
+			test
+		
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-B-12 mb-3">
+<div class="input-group">
+  <button class="input-group-text" id="moins_item">-</button>
+  <input id="number_item_add" type="number" class="form-control" aria-label="0" value="1" min="1" max="100" step="1" disabled>
+  <button class="input-group-text" id="plus_item">+</button>
+</div>
+
+</div>
+</div>
+
+	<button class="btn btn btn-outline-success verticlal-center" id="Search">Ajouter</button>	
+		
+
+		
+		
+		
+		
+      </div>
+      <div class="modal-footer verticlal-center">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	
+    <script src="js/bootstrap.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="data/albums.js"></script>
+    <script src="data/series.js"></script>
+    <script src="data/auteurs.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

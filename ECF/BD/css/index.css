@@ -1,0 +1,255 @@
+* {	
+  font-family: "Play", sans-serif !important;
+}
+
+/* ################ BODY ################ */
+body {
+	background-color: #ededed;
+}
+
+form {
+  max-width: 300px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+p>label {
+  display: block;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+fieldset {
+  /* requis pour composer de manière appropriée les éléments
+     de formulaire sur les navigateurs fondés sur WebKit */
+  -webkit-appearance: none;
+
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+#erreur {
+  color: red;
+}
+
+/* ################ LOADER ################ */
+#loader_bd {
+	margin-top:-150px;
+	height:50px;
+}
+
+/* ################ POUR LOGO ################ */
+#logo a img {
+	filter: invert(50%);
+}
+#logo a img:hover {
+	filter: invert(100%);
+}
+
+/* ################ LOGO HEADER ################ */
+.logo-title {
+	height:90px;
+	z-index:2;
+	margin-top:0px;
+}
+
+/* ################ listing-bd ################ */
+.listing-bd {
+	width:90%;
+	margin:auto;
+	margin-top:130px;
+}
+
+/* ################ NAV ################ */
+nav {
+	padding:0 !important;
+}
+
+nav .container-fluid
+{
+	border-bottom:4px solid #dc3545;
+}
+
+nav ul li a
+{
+    padding: 30px 25px 30px 25px !important;
+	font-size:30px;
+	color:white !important;
+}
+
+nav ul li a:hover
+{
+    padding: 30px 24px 30px 24px !important;
+    border-left:1px solid #dc3545;
+    border-right:1px solid #dc3545;
+}
+
+nav ul li a svg
+{
+	margin-top:-9px;
+}
+
+nav ul li a:hover svg
+{
+	fill: white;
+}
+
+/* ######## BUTTON DANS LA NAV ######### */
+nav ul li button
+{
+    padding: 30px 25px 30px 25px !important;
+	font-size:30px;
+	color:white !important;
+	background-color:black;
+	border:none;
+}
+nav ul li button svg
+{
+	margin-top:-9px;
+}
+
+nav ul li button:hover
+{
+    padding: 30px 24px 30px 24px !important;
+    border-left:1px solid #dc3545;
+    border-right:1px solid #dc3545;
+}
+
+nav ul li button:hover svg
+{
+	fill: white;
+}
+
+.navbar-new-border {
+	border:0.5px solid grey !important;
+	margin-right:10px;
+}
+
+.toggler-icon-new-color {
+	color:white !important;
+}
+
+.connexion-sizing {
+	font-size:25px;
+	margin-top:15px;
+}
+
+/* ################### CARD ################### */
+
+.card-text {
+  font-weight:500;
+}
+
+.card-body a {
+    margin-left: auto;
+}
+
+.card {
+	/*border-top:2px !important;
+	border-bottom:2px !important;*/
+}
+
+/* ################### COULEUR  ################### */
+.white {
+	color:white !important;
+}
+
+.background-black {
+	background-color:black !important;
+}
+
+.color-white {
+	color:grey !important;
+}
+.color-white:hover {
+	background-color:black !important;
+	color:white !important;
+}
+
+.black-bold {
+	font-weight:bold;
+}	
+
+.black-bold:hover {
+	color:#fade4b !important;
+}
+
+/* ################ FOOTER ################ */
+footer {
+	text-align:center;
+	color:white;
+}
+
+.footer-card {
+	width:100%;
+	margin:auto;
+}
+
+.margin-footer-bottom{
+	margin-bottom:10px;
+}
+
+/* ################ LOGO SVG FONTAWESOME ################ */
+.svg-logo-a {
+	padding-right:10px;
+}
+
+.verticlal-center {
+	width:100% !important;
+}
+
+.span-position-panier {
+	margin-left:-9px !important;
+	margin-top:-9px !important;
+	font-size:45% !important;
+}
+
+/* ################ BTN CLOSE ################ */
+.btn-close:hover, .btn-close:focus {
+	background-color:#dc3545 !important;
+}
+
+/* ################ MEDIA QUERY ################ */
+@media all and (max-width: 1250px)
+{
+	nav ul li a, nav ul li button
+	{
+		font-size:18px;
+	}
+	nav ul li a svg, nav ul li button svg
+	{
+		width:20px;
+		height:15px;
+	    margin-top:-5px;
+	}
+	li .dropdown-item {
+		text-align:center;
+	}
+	.connexion-sizing {
+		font-size:18px;
+		margin-left:-10px;
+	}
+}
